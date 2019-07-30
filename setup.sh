@@ -45,7 +45,9 @@ sudo pkill -SIGHUP dockerd
 sudo docker version
 sudo nvidia-docker version
 
+echo ""
 echo "Installation Complete"
-
-echo "pull the container and start nvidia digits: Run => sudo docker run -d --runtime=nvidia --name=digits -p 5000:5000 -v $PWD:/data nvidia/digits"
+echo ""
+echo "To pull the container and start nvidia digits run"
+echo "sudo docker run -d --runtime=nvidia --name=digits -p 5000:5000 -v <path_to_data> nvidia/digits"
 
